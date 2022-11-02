@@ -685,7 +685,7 @@ A continuación, mostramos 15 tablas de resumen para dar un primer acercamiento 
    </td>
    <td>Perfil de riesgo de las aplicaciones
    </td>
-   <td><a href="https://owaspsamm.org/model/design/threat-assessment/stream-b">Threat Modeling</a>
+   <td><a href="https://owaspsamm.org/model/design/threat-assessment/stream-b">Modelado de amenazas</a>
    </td>
   </tr>
   <tr>
