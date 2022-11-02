@@ -91,58 +91,368 @@ Teniendo en cuenta los estudios presentados anteriormente, es claro que la imple
 **OWASP CLASP, Comprehensive, Lightweight Application Security Process** (Proceso de seguridad de aplicaciones completo y ligero) es un conjunto de buenas prácticas, orientadas a las actividades y roles que formalizan las mejores prácticas para desarrollar software, ya sea desde cero o a partir de piezas existentes.
 
 El proyecto CLASP está construido alrededor de 7 mejores prácticas de desarrollo y es aplicable a el ciclo completo de desarrollo, además se adapta a cualquier proceso de desarrollo para lo cual define roles a lo largo del S-SDLC Secure Software Development Life Cycle (Ciclo de vida del desarrollo de software seguro), 24 procesos basados en roles, permite un inicio pequeño e ir escalando de acuerdo con las necesidades.
+<table>
+  <tr>
+   <td><strong>Mejores Prácticas</strong>
+   </td>
+   <td><strong>Actividades</strong>
+   </td>
+   <td><strong>Roles</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ol>
 
-| Mejores Prácticas | Actividades | Roles |
-| --- | --- | --- |
-| 1. Programa de Sensibilización | Campañas de Sensibilización | • Gerente de proyecto |
-| 1. Realizar evaluaciones de las aplicaciones | Realización de análisis de seguridad de los requisitos y el diseño del sistema (modelado de amenazas) | • Propietario: auditor de
-seguridad |
-|  | Realización de una revisión de la seguridad a nivel de recursos fuente | • Colaborador clave: ejecutor, diseñador
-• Analista de pruebas |
-|  | verificar los atributos de seguridad de los recursos | • Tester |
-|  | Investigar y evaluar la postura de seguridad de las soluciones tecnológicas | • Propietario: diseñador
-• Colaborador clave: proveedor
-de componentes |
-| 1. Captura de los requisitos 
-de seguridad | Identifique la política de seguridad global | • Redactor de requisitos |
-|  | Identificar recursos y límites
-seguros | • Propietario: Arquitecto
-• Colaborador clave: Redactor
-de requisitos |
-|  | Identificar las funciones de los usuarios y las capacidades de los recursos | • Propietario: Arquitecto
-• Colaborador clave: Redactor de requisitos |
-|  | Especificar el entorno operativo | • Propietario: Redactor de requisitos
-• Colaborador clave: Arquitecto |
-|  | Detallar los casos de uso indebido | • Propietario: Redactor de requisitos
-• Colaborador clave: partes interesadas |
-|  | Identificación de la superficie de ataque | • Diseñador |
-|  | Documentar los requisitos de seguridad | • Propietario: Redactor de requisitos
-• Colaborador clave: Arquitecto |
-| 1. Implementar prácticas de desarrollo seguro. | Aplicar principios de seguridad
-al diseño. | • Diseñador |
-|  | Anotar los diseños de las clases
-con propiedades de seguridad | • Diseñador |
-|  | Aplicar y elaborar políticas de
-recursos y tecnologías de
-seguridad | • Desarrollador |
-|  | Implementar contratos de interfaz | • Desarrollador |
-|  | Integrar el análisis de seguridad
-en el proceso de gestión de
-fuentes | • Integrador |
-|  | Realizar la firma de código | • Integrador |
-| 1. Construir procedimientos de corrección de vulnerabilidades | Gestionar el proceso de
-divulgación de problemas
-de seguridad | • Propietario: Gerente de proyecto
-• Colaborador clave: Diseñador |
-|  | Abordar los problemas de seguridad notificados | • Propietario: Diseñador
-• Reportero de fallas |
-| 1. Definir y monitorear las métricas | Monitorear las métricas de
-seguridad | • Gerente de proyecto |
-| 1. Publicar directrices de seguridad operacional | Especificar la configuración de
-seguridad de la base de datos | • Diseñador de la base de datos |
-|  | Construir la guía de seguridad
-operativa | • Propietario: Integrador
-• Colaborador clave: Diseñador, Arquitecto, Desarrollador |
+<li><strong> Programa de Sensibilización </strong>
+</li>
+</ol>
+   </td>
+   <td>Campañas de Sensibilización 
+   </td>
+   <td>
+<ul>
+
+<li>Gerente de proyecto
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="4" >
+<ol>
+
+<li><strong>Realizar evaluaciones de las aplicaciones</strong>
+</li>
+</ol>
+   </td>
+   <td>Realización de análisis de seguridad de los requisitos y el diseño del sistema (modelado de amenazas)
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: auditor de 
+    seguridad
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Realización de una revisión de la seguridad a nivel de recursos fuente
+   </td>
+   <td>
+<ul>
+
+<li>Colaborador clave: ejecutor, diseñador
+
+<li>Analista de pruebas
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>verificar los atributos de seguridad de los recursos
+   </td>
+   <td>
+<ul>
+
+<li>Tester
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Investigar y evaluar la postura de seguridad de las soluciones tecnológicas
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: diseñador
+
+<li>Colaborador clave: proveedor 
+    de componentes
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="7" >
+<ol>
+
+<li><strong>Captura de los requisitos </strong>
+    <strong>de seguridad</strong>
+</li>
+</ol>
+   </td>
+   <td>Identifique la política de seguridad global
+   </td>
+   <td>
+<ul>
+
+<li>Redactor de requisitos
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Identificar recursos y límites 
+<p>
+seguros
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Arquitecto
+
+<li>Colaborador clave: Redactor 
+    de requisitos
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Identificar las funciones de los usuarios y las capacidades de los recursos
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Arquitecto
+
+<li>Colaborador clave: Redactor de requisitos
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Especificar el entorno operativo
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Redactor de requisitos
+
+<li>Colaborador clave: Arquitecto
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Detallar los casos de uso indebido
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Redactor de requisitos
+
+<li>Colaborador clave: partes interesadas
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Identificación de la superficie de ataque
+   </td>
+   <td>
+<ul>
+
+<li>Diseñador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Documentar los requisitos de seguridad
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Redactor de requisitos
+
+<li>Colaborador clave: Arquitecto
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="6" >
+<ol>
+
+<li><strong>Implementar prácticas de desarrollo seguro.</strong>
+</li>
+</ol>
+   </td>
+   <td>Aplicar principios de seguridad 
+<p>
+al diseño.
+   </td>
+   <td>
+<ul>
+
+<li>Diseñador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Anotar los diseños de las clases
+<p>
+con propiedades de seguridad
+   </td>
+   <td>
+<ul>
+
+<li>Diseñador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Aplicar y elaborar políticas de 
+<p>
+recursos y tecnologías de 
+<p>
+seguridad
+   </td>
+   <td>
+<ul>
+
+<li>Desarrollador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Implementar contratos de interfaz
+   </td>
+   <td>
+<ul>
+
+<li>Desarrollador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Integrar el análisis de seguridad
+<p>
+en el proceso de gestión de 
+<p>
+fuentes
+   </td>
+   <td>
+<ul>
+
+<li>Integrador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Realizar la firma de código
+   </td>
+   <td>
+<ul>
+
+<li>Integrador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >
+<ol>
+
+<li><strong>Construir procedimientos de corrección de vulnerabilidades</strong>
+</li>
+</ol>
+   </td>
+   <td>Gestionar el proceso de
+<p>
+divulgación de problemas 
+<p>
+de seguridad
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Gerente de proyecto
+
+<li>Colaborador clave: Diseñador
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Abordar los problemas de seguridad notificados
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Diseñador
+
+<li>Reportero de fallas
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ol>
+
+<li><strong>Definir y monitorear las métricas</strong>
+</li>
+</ol>
+   </td>
+   <td>Monitorear las métricas de 
+<p>
+seguridad
+   </td>
+   <td>
+<ul>
+
+<li>Gerente de proyecto
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >
+<ol>
+
+<li><strong>Publicar directrices de seguridad operacional</strong>
+</li>
+</ol>
+   </td>
+   <td>Especificar la configuración de 
+<p>
+seguridad de la base de datos
+   </td>
+   <td>
+<ul>
+
+<li>Diseñador de la base de datos
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Construir la guía de seguridad 
+<p>
+operativa
+   </td>
+   <td>
+<ul>
+
+<li>Propietario: Integrador
+
+<li>Colaborador clave: Diseñador, Arquitecto, Desarrollador
+</li>
+</ul>
+   </td>
+  </tr>
+</table>
+
+
 
 OWASP Open Web Application Security Project (Proyecto [abierto](https://es.wikipedia.org/wiki/C%C3%B3digo_abierto) de [seguridad](https://es.wikipedia.org/wiki/Seguridad_inform%C3%A1tica) de [aplicaciones web](https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_web)) es una organización sin ánimo de lucro dedicada a determinar y combatir las causas que dan por resultado el software inseguro, para ello esta organización se encarga de crear metodologías, documentación, recomendaciones y herramientas de software libre en busca de cumplir su misión de combatir el software inseguro. Debido a esto dedicó años a crear y mantener el proyecto CLASP, sin embargo, con el paso del tiempo, emergió el proyecto OPENSAMM, el cual reemplaza a CLAMP y ya se encuentra en su versión 2.
 
