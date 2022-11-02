@@ -74,7 +74,7 @@ Este aspecto del presente documento trata el aspecto de los antecedentes, en don
 
 La tesis titulada “Seguridad de la información en el proceso de desarrollo de sistemas y del producto mediante la implementación de controles de seguridad basado en la norma ISO 27002:2015 en la empresa BITNESS CORP S.A.C.” elaborada por Alvarado y Sánchez (2020) en donde su objetivo es aumentar la seguridad en el desarrollo de sistemas y de su resultado en la organización BITNESS CORP. S.A.C. En cuanto a su metodología, esta investigación es no experimental de tipo longitudinal, ya que por una parte es experimental debido a que los datos se obtuvieron de la evaluación de la organización en su operación corriente y longitudinal debido a que la evaluación de a la organización se realizó en dos ocasiones, antes de la implementación de las medidas y después de estas. En lo concerniente a los resultados, estos se presentaron por medio de gráficas realizándose las comparaciones entre la primera evaluación y la segunda en donde se evalúa el cumplimiento de los distintos controles de seguridad definidos evidenciándose una mejora en dichos controles. Además, se presentó el aumento de la seguridad de la información de la empresa que pasó de un 48.95% a un 81.80% lo que permite concluir que la aplicación de los controles de seguridad en BITNESS CORP S.A.C permitió aumentar el nivel de seguridad tanto en el proceso de desarrollo de sistemas como en el producto resultante.
 
-Por otro lado, el estudio cualitativo “Security in the Software Development Lifecycle” desarrollado por Assal y Chiasson (2018) el cual, a través de entrevistas a desarrolladores de software, se investigó sobre las prácticas de seguridad implementadas en la industria para cada etapa del ciclo del desarrollo del software. En donde se hallaron algunos factores que afectan la seguridad en el ciclo de desarrollo de software tales como la división de actividades, el grado de conocimiento en relación con seguridad en algunos equipos de desarrollo, la falta de la seguridad en la cultura de la organización, la disponibilidad de recursos, entre otros aspectos. Lo anterior permitió llegar a las siguientes conclusiones: que las prácticas de seguridad aplicadas en las organizaciones difieren notablemente de las mejores prácticas identificadas. Que las mejoras practicas frecuentemente son ignoradas debido a que ir acorde a ellas aumentaría la carga de trabajo para el equipo de desarrollo. Que el problema no se limita al equipo de desarrollo sino también en la jerarquía de la organización y que los resultados obtenidos remarcan la necesidad de nuevas y ligeras prácticas de seguridad que se ajusten a realidad y a las presiones del desarrollo de software.
+Por otro lado, el estudio cualitativo “Security in the Software Development Lifecycle” desarrollado por Assal y Chiasson (2018) el cual, a través de entrevistas a desarrolladores de software, se investigó sobre las prácticas de seguridad implementadas en la industria para cada etapa del ciclo del desarrollo del software. En donde se hallaron algunos factores que afectan la seguridad en el ciclo de desarrollo de software tales como la división de actividades, el grado de conocimiento en relación con seguridad en algunos equipos de desarrollo, la falta de la seguridad en la cultura de la organización, la disponibilidad de recursos, entre otros aspectos. Lo anterior permitió llegar a las siguientes conclusiones: que las prácticas de seguridad aplicadas en las organizaciones difieren notablemente de las mejores prácticas identificadas. Que las mejores practicas frecuentemente son ignoradas debido a que ir acorde a ellas aumentaría la carga de trabajo para el equipo de desarrollo. Que el problema no se limita al equipo de desarrollo sino también en la jerarquía de la organización y que los resultados obtenidos remarcan la necesidad de nuevas y ligeras prácticas de seguridad que se ajusten a realidad y a las presiones del desarrollo de software.
 
 Por otra parte, Danish et al., (2020) en el artículo de investigación titulado “Importance of Secure Software Development Processes and Tools for Developers” por medio de una investigación en línea (online research) que tuvo como fuentes a IEEE, Google Scholar, Research Gate y ACM (Association for Computing Machinery) no solo para discutir sobre cuál es el método apropiado para construir software seguro, sino que también se presentaron tópicos importantes como el SDLC, las debilidades de seguridad del software, los problemas en las prácticas de código seguro al igual que sobre las prácticas de software seguro y también sobre un enfoque para resolver los problemas de seguridad. Dicho enfoque se basa en dos principales aspectos, el primero, que los desarrolladores deben capacitarse y educarse en relación con este aspecto y el segundo es que estos deben utilizar en la medida posible, herramientas de desarrollo que han demostrado ser seguras y que están disponibles. Por último, este artículo en su conclusión propone como solución el uso de herramientas para escanear la seguridad al igual que la capacitación de los interesados del proyecto de manera frecuente en conjunto con actualizaciones regulares al software implementado.
 
@@ -172,132 +172,904 @@ El modelo SAMM V2 Propone 5 ejes fundamentales para lograr sus objetivos:
 Cada uno de estos ejes fundamentales posee tres temas principales y cada tema es abordado desde dos tipos de acciones a realizar, según el tipo de actores que interactúan con los temas y el nivel de madurez del proceso en la organización.
 
 A continuación, mostramos 15 tablas de resumen para dar un primer acercamiento al tema, estas están divididas en tres tablas para cada uno de los ejes principales.
+## Gobernanza
 
-| 1. Gobernanza |  |  |  |
-| --- | --- | --- | --- |
-| 1.1 Métricas y estrategia |  |  |  |
-| Madurez | Objetivo | Crear y promocionar | Medir y mejorar |
-| 1 | Identificar los objetivos y los medios para medir la eficacia del programa de seguridad. | Identificar los impulsores de la organización en relación con la tolerancia al riesgo de la organización. | Definir métricas que permitan conocer la eficacia y eficiencia del Programa de Seguridad de Aplicaciones. |
-| 2 | Establecer una hoja de ruta estratégica unificada para la seguridad del software dentro de la organización. | Publicar una estrategia unificada para la seguridad de las aplicaciones. | Establecer objetivos y KPI para medir la eficacia del programa. |
-| 3 | Alinear los esfuerzos de seguridad con los indicadores organizacionales relevantes y los valores de los activos. | Alinear el programa de seguridad de las aplicaciones para apoyar el crecimiento de la organización. | Influir en la estrategia en función de las métricas y las necesidades de la organización. |
 
-| 1. Gobernanza |  |  |  |
-| --- | --- | --- | --- |
-| 1.2 Política y cumplimiento |  |  |  |
-| Madurez | Objetivo | Política y normas | Gestión del cumplimiento de las normas |
-| 1 | Identificar y documentar los impulsores de la gobernanza y el cumplimiento relevantes para la organización. | Determinar una línea de base de seguridad que represente las políticas y normas de la organización. | Identificar los impulsores y los requisitos de cumplimiento de terceros y asignarlos a las políticas y normas existentes. |
-| 2 | Establecer una línea de base de seguridad y cumplimiento específica para la aplicación. | Desarrollar los requisitos de seguridad aplicables a todas las aplicaciones. | Publicar los requisitos de aplicación específicos de la conformidad y las orientaciones sobre las pruebas. |
-| 3 | Medir el cumplimiento de políticas, normas y requisitos de terceros. | Medir e informar sobre el estado de cumplimiento de las políticas y normas de cada aplicación. | Medir e informar sobre el cumplimiento de la aplicación individual con los requisitos de terceros. |
+<table>
+  <tr>
+   <td colspan="4" >
+<ol>
 
-| 1. Gobernanza |  |  |  |
-| --- | --- | --- | --- |
-| 1.3 Educación y Orientación |  |  |  |
-| Madurez | Objetivo | Formación y sensibilización | Organización y cultura |
-| 1 | Ofrecer al personal acceso a los recursos en torno a los temas de desarrollo e implantación seguros. | Impartir formación sobre seguridad a todo el personal que participa en el desarrollo de software | Identificar un "Campeón de Seguridad" dentro de cada equipo de desarrollo. |
-| 2 | Educar a todo el personal en el ciclo de vida del software con tecnología y orientación específica para cada función sobre el desarrollo seguro. | Ofrecer orientación tecnológica y específica para cada función, incluidos los matices de seguridad de cada idioma y plataforma | Desarrollar un centro de excelencia de software seguro que promueva el liderazgo de pensamiento entre desarrolladores y arquitectos. |
-| 3 | Desarrollar programas de formación internos facilitados por los desarrolladores de los diferentes equipos. | Orientación interna estandarizada en torno a las normas de desarrollo de software seguro de la organización. | Construir una comunidad de software seguro que incluya a todas las personas de la organización implicadas en la seguridad del software. |
+<li>Gobernanza
+</li>
+</ol>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    1.1 Métricas y estrategia
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Crear y promocionar
+   </td>
+   <td>Medir y mejorar
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Identificar los objetivos y los medios para medir la eficacia del programa de seguridad.
+   </td>
+   <td>Identificar los impulsores de la organización en relación con la tolerancia al riesgo de la organización.
+   </td>
+   <td>Definir métricas que permitan conocer la eficacia y eficiencia del Programa de Seguridad de Aplicaciones.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Establecer una hoja de ruta estratégica unificada para la seguridad del software dentro de la organización.
+   </td>
+   <td>Publicar una estrategia unificada para la seguridad de las aplicaciones.
+   </td>
+   <td>Establecer objetivos y KPI para medir la eficacia del programa.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Alinear los esfuerzos de seguridad con los indicadores organizacionales relevantes y los valores de los activos.
+   </td>
+   <td>Alinear el programa de seguridad de las aplicaciones para apoyar el crecimiento de la organización.
+   </td>
+   <td>Influir en la estrategia en función de las métricas y las necesidades de la organización.
+   </td>
+  </tr>
+</table>
 
-| 1. Diseño |  |  |  |
-| --- | --- | --- | --- |
-| 2.1 Evaluación de amenazas |  |  |  |
-| Madurez | Objetivo | Perfil de riesgo de las aplicaciones | Threat Modeling |
-| 1 | Identificación de las amenazas de alto nivel para la organización y los proyectos individuales. | Se realiza una evaluación básica del riesgo de la aplicación para comprender la probabilidad y el impacto de un ataque. | Realice el mejor esfuerzo, el modelado de amenazas basado en el riesgo utilizando la lluvia de ideas y los diagramas existentes con listas de control de amenazas simples. |
-| 2 | Estandarización y análisis en toda la empresa de las amenazas relacionadas con el software dentro de la organización. | Comprender el riesgo de todas las aplicaciones de la organización centralizando el inventario de perfiles de riesgo para las partes interesadas. | Estandarizar la formación, los procesos y las herramientas de modelado de amenazas para que se extiendan a toda la organización. |
-| 3 | Mejora proactiva de la cobertura de amenazas en toda la organización. | Revisar periódicamente los perfiles de riesgo de las aplicaciones a intervalos regulares para garantizar la exactitud y reflejar el estado actual. | Optimización y automatización continua de su metodología de modelado de amenazas. |
 
-| 2. Diseño |  |  |  |
-| --- | --- | --- | --- |
-| 2.2 Requisitos de seguridad |  |  |  |
-| Madurez | Objetivo | Requisitos de software | Seguridad de proveedores |
-| 1 | Considerar la seguridad explícitamente durante el proceso de requisitos del software. | Los objetivos de seguridad de alto nivel de la aplicación se asignan a los requisitos funcionales. | Evaluar al proveedor en función de los requisitos de seguridad de la organización. |
-| 2 | Aumentar la granularidad de los requisitos de seguridad derivados de la lógica empresarial y los riesgos conocidos. | Los requisitos de seguridad estructurados están disponibles y son utilizados por los equipos de desarrolladores. | Incorporar la seguridad en los acuerdos con los proveedores para garantizar el cumplimiento de los requisitos de la organización. |
-| 3 | Establecer un proceso de requisitos de seguridad para todos los proyectos de software y las dependencias de terceros. | Construir un marco de requisitos para que los equipos de productos lo utilicen. | Garantizar una cobertura de seguridad adecuada para los proveedores externos proporcionando objetivos claros. |
 
-| 2. Diseño |  |  |  |
-| --- | --- | --- | --- |
-| 2.3 Arquitectura de la seguridad |  |  |  |
-| Madurez | Objetivo | Diseño de la arquitectura | Gestión de la 
-tecnología |
-| 1 | Incorporar la consideración de la orientación proactiva de la seguridad en el proceso de diseño del software. | Los equipos reciben formación sobre el uso de los principios básicos de seguridad durante el diseño | Determinar las tecnologías, los DreamWorks y las integraciones dentro de la solución global para identificar el riesgo. |
-| 2 | Dirigir el proceso de diseño de software hacia servicios seguros conocidos y diseños seguros por defecto. | Establecer patrones de diseño y soluciones de seguridad comunes para su adopción. | Estandarizar las tecnologías y los DreamWorks que se utilizarán en las diferentes aplicaciones |
-| 3 | Controlar formalmente el proceso de diseño de software y validar la utilización de componentes seguros. | Las arquitecturas de referencia se utilizan y se evalúan continuamente para su adopción y adecuación. | Implementar el uso de tecnologías estándar en todo el desarrollo de software. |
-| 1. Implementación |  |  |  |
-| 3.1 Desarrollo Seguro |  |  |  |
-| Madurez | Objetivo | Proceso de desarrollo | Dependencias de software |
-| 1 | El proceso de desarrollo es repetible y consistente. | Crear una definición formal del proceso de desarrollo para que sea coherente y repetible. | Cree informes con la lista de componentes de sus aplicaciones y analícelos de forma oportuna. |
-| 2 | El proceso de desarrollo está optimizado y totalmente integrado en el flujo de trabajo. | Automatice su proceso de desarrollo y asegure las herramientas utilizadas. Añada comprobaciones de seguridad en el proceso de desarrollo. | Evalúe las dependencias utilizadas y garantice una reacción oportuna ante situaciones que supongan un riesgo para sus aplicaciones. |
-| 3 | El proceso de desarrollo ayuda a evitar que los defectos conocidos entren en el entorno de producción. | Defina las comprobaciones de seguridad obligatorias en el proceso de construcción y garantice que no se desarrollen productos no aptos. | Analizar los problemas de seguridad de las dependencias utilizadas al igual que la seguridad de su propio código. |
 
-| 3. Implementación |  |  |  |
-| --- | --- | --- | --- |
-| 3.2 Despliegue Seguro |  |  |  |
-| Madurez | Objetivo | Proceso de despliegue | Gestión del secreto |
-| 1 | Los procesos de implantación están totalmente documentados. | Formalizar el proceso de despliegue y asegurar las herramientas y procesos utilizados. | Introduzca medidas básicas de protección para limitar el acceso a sus secretos de producción. |
-| 2 | Los procesos de despliegue incluyen hitos de verificación de la seguridad. | Automatice el proceso de despliegue en todas las etapas e introduzca pruebas de verificación de seguridad razonables. | Inyectar secretos dinámicamente durante el proceso de despliegue desde depósitos protegidos y auditar todos los accesos humanos a los mismos. |
-| 3 | El proceso de despliegue está totalmente automatizado e incorpora la verificación automática de todos los hitos críticos. | Verifique automáticamente la integridad de todo el software desplegado, independientemente de si está desarrollado interna o externamente. | Mejore el ciclo de vida de los secretos de la aplicación generándolos regularmente y garantizando su uso adecuado. |
 
-| 3. Implementación |  |  |  |
-| --- | --- | --- | --- |
-| 3.3 Gestión de los defectos |  |  |  |
-| Madurez | Objetivo | Seguimiento de defectos | Métrica y retroalimentación |
-| 1 | Todos los defectos se rastrean dentro de cada proyecto. | Introducir un seguimiento estructurado de los defectos de seguridad y tomar decisiones informadas basadas en esta información. | Repase periódicamente los defectos de seguridad registrados anteriormente y obtenga ganancias rápidas a partir de las métricas básicas. |
-| 2 | El seguimiento de los defectos se utiliza para influir en el proceso de implantación. | Califique todos los defectos de seguridad en toda la organización de forma coherente y definir acuerdos de nivel de servicio para determinadas clases de gravedad. | Recopilar métricas estandarizadas de gestión de defectos y utilizarlas también para priorizar las iniciativas impulsadas de forma centralizada. |
-| 3 | El seguimiento de los defectos en múltiples componentes se utiliza para ayudar a reducir el número de nuevos defectos. | Haga cumplir los acuerdos de nivel de servicio predefinidos e integre su sistema de gestión de defectos con otras herramientas pertinentes. | Mejore continuamente sus métricas de gestión de defectos de seguridad y correlaciónelas con otras fuentes. |
+<table>
+  <tr>
+   <td colspan="4" >
+    1. Gobernanza
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    1.2 Política y cumplimiento
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Política y normas
+   </td>
+   <td>Gestión del cumplimiento de las normas
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Identificar y documentar los impulsores de la gobernanza y el cumplimiento relevantes para la organización.
+   </td>
+   <td>Determinar una línea de base de seguridad que represente las políticas y normas de la organización.
+   </td>
+   <td>Identificar los impulsores y los requisitos de cumplimiento de terceros y asignarlos a las políticas y normas existentes.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Establecer una línea de base de seguridad y cumplimiento específica para la aplicación.
+   </td>
+   <td>Desarrollar los requisitos de seguridad aplicables a todas las aplicaciones.
+   </td>
+   <td>Publicar los requisitos de aplicación específicos de la conformidad y las orientaciones sobre las pruebas.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Medir el cumplimiento de políticas, normas y requisitos de terceros.
+   </td>
+   <td>Medir e informar sobre el estado de cumplimiento de las políticas y normas de cada aplicación.
+   </td>
+   <td>Medir e informar sobre el cumplimiento de la aplicación individual con los requisitos de terceros.
+   </td>
+  </tr>
+</table>
 
-| 1. Verificación |  |  |  |
-| --- | --- | --- | --- |
-| 4.1 Evaluación de la arquitectura |  |  |  |
-| Madurez | Objetivo | Validación de la arquitectura | Armonización de la arquitectura |
-| 1 | Revisar la arquitectura para asegurarse de que existen mitigaciones de referencia para los riesgos típicos. | Identificar los componentes de la arquitectura de la aplicación y de la infraestructura y revisarlos para la provisión de seguridad básica | Revisión ad hoc de la arquitectura en busca de amenazas de seguridad no mitigadas. |
-| 2 | Revisar la provisión completa de mecanismos de seguridad en la arquitectura. | Validar los mecanismos de seguridad de la arquitectura | Analizar la arquitectura en busca de amenazas conocidas. |
-| 3 | Analizar la arquitectura en busca de amenazas conocidas. Revisar la efectividad de la arquitectura y retroalimentar los resultados para mejorar la arquitectura de seguridad. | Revisión de la eficacia de los componentes de la arquitectura | Alimentar los resultados de la revisión de la arquitectura con la arquitectura empresarial, los principios y patrones de diseño de la organización, las soluciones de seguridad y las arquitecturas de referencia. |
 
-| 4. Verificación |  |  |  |
-| --- | --- | --- | --- |
-| 4.2 Pruebas basadas en requisitos |  |  |  |
-| Madurez | Objetivo | Control de verificación | Pruebas de uso indebido/abuso |
-| 1 | Encontrar oportunamente vulnerabilidades básicas y otros problemas de seguridad. | Prueba de los controles de seguridad del software | Realización de pruebas de seguridad difusas |
-| 2 | Realice una revisión de la implementación para descubrir los riesgos específicos de la aplicación frente a los requisitos de seguridad. | Elaborar casos de prueba a partir de los requisitos de seguridad conocidos | Crear y probar los casos de abuso y la prueba de defectos de la lógica empresarial |
-| 3 | Mantener el nivel de seguridad de la aplicación después de las correcciones de errores, los cambios o durante el mantenimiento. | Realizar pruebas de regresión (con pruebas unitarias de seguridad) | Pruebas de denegación de servicio y de estrés de seguridad |
 
-| 4. Verificación |  |  |  |
-| --- | --- | --- | --- |
-| 4.3 Pruebas de seguridad |  |  |  |
-| Madurez | Objetivo | Escalabilidad | Entendimiento Profundo |
-| 1 | Realizar pruebas de seguridad (tanto manuales como basadas en herramientas) para descubrir defectos de seguridad. | Utilizar herramientas de pruebas de seguridad automatizadas | Realizar pruebas de seguridad manuales de los componentes de alto riesgo |
-| 2 | Haga que las pruebas de seguridad durante el desarrollo sean más completas y eficientes mediante la automatización complementada con pruebas de penetración de seguridad manuales regulares. | Utilizar la automatización de las pruebas de seguridad específicas para la aplicación | Llevar a cabo pruebas de penetración manuales |
-| 3 | Incorporar las pruebas de seguridad como parte de los procesos de desarrollo e implantación. | Integrar las pruebas de seguridad automatizadas en el proceso de creación y despliegue | Integrar las pruebas de seguridad en el proceso de desarrollo |
 
-| 1. Operaciones |  |  |  |
-| --- | --- | --- | --- |
-| 5.1 Gestión de incidentes |  |  |  |
-| Madurez | Objetivo | Detección de Incidentes | Respuesta a incidentes |
-| 1 | Máximo esfuerzo en la detección y tratamiento de incidentes | Utilice y haga su mejor esfuerzo en analizar los datos de registro disponibles para realizar la detección de posibles incidentes de seguridad. | Identificar las funciones y responsabilidades para la respuesta a incidentes. |
-| 2 | Establecer un proceso formal de gestión de incidentes | Seguir un proceso establecido y bien documentado para la detección de incidentes, con énfasis en la evaluación automatizada de los registros. | Establezca un proceso formal de respuesta a incidentes y asegúrese de que el personal está debidamente formado para desempeñar sus funciones. |
-| 3 | Gestión de incidencias
-madura | Utilizar un proceso gestionado de forma proactiva para la detección de incidentes. | Cuente con un equipo de respuesta a incidentes dedicado y bien formado. |
 
-| 5. Operaciones |  |  |  |
-| --- | --- | --- | --- |
-| 5.2 Gestión del entorno |  |  |  |
-| Madurez | Objetivo | Refuerzo de la configuración | Parches y actualizaciones |
-| 1 | Realizar el mejor esfuerzo en parcheo y robustez | Realizar el mejor esfuerzo de robustecimiento de las configuraciones, basándose en la información disponible. | Realice el mejor esfuerzo de parcheo de los componentes del sistema y de las aplicaciones. |
-| 2 | Estructurar los procesos con las directrices establecidas | Realice un robustecimiento coherente de las configuraciones, siguiendo las directrices y las orientaciones establecidas. | Realizar parches regulares de los componentes del sistema y de las aplicaciones, en toda la pila. Garantizar la entrega puntual de los parches a los clientes. |
-| 3 | Cumplimiento de la mejora continua del proceso | Supervisar activamente las configuraciones para comprobar que se ajustan a las directrices y tratar las incidencias detectadas como defectos de seguridad. | Supervisar activamente el estado de las actualizaciones y gestionar los parches que faltan como defectos de seguridad. Consultar de forma proactiva la información sobre vulnerabilidades y actualizaciones de los componentes. |
+<table>
+  <tr>
+   <td colspan="4" >
+    1. Gobernanza
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    1.3 Educación y Orientación
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Formación y sensibilización
+   </td>
+   <td>Organización y cultura
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Ofrecer al personal acceso a los recursos en torno a los temas de desarrollo e implantación seguros.
+   </td>
+   <td>Impartir formación sobre seguridad a todo el personal que participa en el desarrollo de software
+   </td>
+   <td>Identificar un "Campeón de Seguridad" dentro de cada equipo de desarrollo.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Educar a todo el personal en el ciclo de vida del software con tecnología y orientación específica para cada función sobre el desarrollo seguro.
+   </td>
+   <td>Ofrecer orientación tecnológica y específica para cada función, incluidos los matices de seguridad de cada idioma y plataforma
+   </td>
+   <td>Desarrollar un centro de excelencia de software seguro que promueva el liderazgo de pensamiento entre desarrolladores y arquitectos.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Desarrollar programas de formación internos facilitados por los desarrolladores de los diferentes equipos.
+   </td>
+   <td>Orientación interna estandarizada en torno a las normas de desarrollo de software seguro de la organización.
+   </td>
+   <td>Construir una comunidad de software seguro que incluya a todas las personas de la organización implicadas en la seguridad del software.
+   </td>
+  </tr>
+</table>
 
-| 5. Operaciones |  |  |  |
-| --- | --- | --- | --- |
-| 5.3 Gestión operativa |  |  |  |
-| Madurez | Objetivo | Protección de datos | Cierre del sistema / Gestión del legado |
-| 1 | Prácticas Fundamentales | Aplicar prácticas básicas de protección de datos | Desactivar las aplicaciones y servicios no utilizados según se identifique. Gestionar individualmente las actualizaciones/migraciones de los clientes. |
-| 2 | Procesos gestionados y con capacidad de respuesta | Desarrollar un catálogo de datos y establecer una política de protección de datos. | Desarrollar procesos de cierre repetibles para los sistemas/servicios no utilizados y para la migración de las dependencias heredadas. Gestionar las hojas de ruta de migración del legado para los clientes. |
-| 3 | Monitoreo Activo y respuesta | Automatizar la detección del incumplimiento de la política y auditar periódicamente su cumplimiento. Revisar y actualizar periódicamente el catálogo de datos y la política de protección de datos. | Gestionar de forma proactiva las hojas de ruta de migración, tanto para las dependencias de fin de vida útil no soportadas, como para las versiones heredadas del software entregado. |
+
+
+
+
+## Diseño
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+<ol>
+
+<li>Diseño
+</li>
+</ol>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    2.1 Evaluación de amenazas
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Perfil de riesgo de las aplicaciones
+   </td>
+   <td><a href="https://owaspsamm.org/model/design/threat-assessment/stream-b">Threat Modeling</a>
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Identificación de las amenazas de alto nivel para la organización y los proyectos individuales.
+   </td>
+   <td>Se realiza una evaluación básica del riesgo de la aplicación para comprender la probabilidad y el impacto de un ataque.
+   </td>
+   <td>Realice el mejor esfuerzo, el modelado de amenazas basado en el riesgo utilizando la lluvia de ideas y los diagramas existentes con listas de control de amenazas simples.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Estandarización y análisis en toda la empresa de las amenazas relacionadas con el software dentro de la organización.
+   </td>
+   <td>Comprender el riesgo de todas las aplicaciones de la organización centralizando el inventario de perfiles de riesgo para las partes interesadas.
+   </td>
+   <td>Estandarizar la formación, los procesos y las herramientas de modelado de amenazas para que se extiendan a toda la organización.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Mejora proactiva de la cobertura de amenazas en toda la organización.
+   </td>
+   <td>Revisar periódicamente los perfiles de riesgo de las aplicaciones a intervalos regulares para garantizar la exactitud y reflejar el estado actual.
+   </td>
+   <td>Optimización y automatización continua de su metodología de modelado de amenazas.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    2. Diseño
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    2.2 Requisitos de seguridad
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Requisitos de software
+   </td>
+   <td>Seguridad de proveedores
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Considerar la seguridad explícitamente durante el proceso de requisitos del software.
+   </td>
+   <td>Los objetivos de seguridad de alto nivel de la aplicación se asignan a los requisitos funcionales.
+   </td>
+   <td>Evaluar al proveedor en función de los requisitos de seguridad de la organización.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Aumentar la granularidad de los requisitos de seguridad derivados de la lógica empresarial y los riesgos conocidos.
+   </td>
+   <td>Los requisitos de seguridad estructurados están disponibles y son utilizados por los equipos de desarrolladores.
+   </td>
+   <td>Incorporar la seguridad en los acuerdos con los proveedores para garantizar el cumplimiento de los requisitos de la organización.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Establecer un proceso de requisitos de seguridad para todos los proyectos de software y las dependencias de terceros.
+   </td>
+   <td>Construir un marco de requisitos para que los equipos de productos lo utilicen.
+   </td>
+   <td>Garantizar una cobertura de seguridad adecuada para los proveedores externos proporcionando objetivos claros.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    2 . Diseño
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    2.3 Arquitectura de la seguridad
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>
+    Diseño de la arquitectura
+   </td>
+   <td>Gestión de la 
+<p>
+tecnología
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Incorporar la consideración de la orientación proactiva de la seguridad en el proceso de diseño del software.
+   </td>
+   <td>Los equipos reciben formación sobre el uso de los principios básicos de seguridad durante el diseño
+   </td>
+   <td>Determinar las tecnologías, los frameworks y las integraciones dentro de la solución global para identificar el riesgo.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Dirigir el proceso de diseño de software hacia servicios seguros conocidos y diseños seguros por defecto.
+   </td>
+   <td>Establecer patrones de diseño y soluciones de seguridad comunes para su adopción.
+   </td>
+   <td>Estandarizar las tecnologías y los frameworks que se utilizarán en las diferentes aplicaciones
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Controlar formalmente el proceso de diseño de software y validar la utilización de componentes seguros.
+   </td>
+   <td>Las arquitecturas de referencia se utilizan y se evalúan continuamente para su adopción y adecuación.
+   </td>
+   <td>Implementar el uso de tecnologías estándar en todo el desarrollo de software.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+## Implementación
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+<ol>
+
+<li>Implementación
+</li>
+</ol>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    3.1 Desarrollo Seguro
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Proceso de desarrollo
+   </td>
+   <td>Dependencias de software
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>El proceso de desarrollo es repetible y consistente.
+   </td>
+   <td>Crear una definición formal del proceso de desarrollo para que sea coherente y repetible.
+   </td>
+   <td>Cree informes con la lista de componentes de sus aplicaciones y analícelos de forma oportuna.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>El proceso de desarrollo está optimizado y totalmente integrado en el flujo de trabajo.
+   </td>
+   <td>Automatice su proceso de desarrollo y asegure las herramientas utilizadas. Añada comprobaciones de seguridad en el proceso de desarrollo.
+   </td>
+   <td>Evalúe las dependencias utilizadas y garantice una reacción oportuna ante situaciones que supongan un riesgo para sus aplicaciones.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>El proceso de desarrollo ayuda a evitar que los defectos conocidos entren en el entorno de producción.
+   </td>
+   <td>Defina las comprobaciones de seguridad obligatorias en el proceso de construcción y garantice que no se desarrollen productos no aptos.
+   </td>
+   <td>Analizar los problemas de seguridad de las dependencias utilizadas al igual que la seguridad de su propio código.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    3. Implementación
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    3.2 Despliegue Seguro
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Proceso de despliegue
+   </td>
+   <td>Gestión del secreto
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Los procesos de implantación están totalmente documentados.
+   </td>
+   <td>Formalizar el proceso de despliegue y asegurar las herramientas y procesos utilizados.
+   </td>
+   <td>Introduzca medidas básicas de protección para limitar el acceso a sus secretos de producción.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Los procesos de despliegue incluyen hitos de verificación de la seguridad.
+   </td>
+   <td>Automatice el proceso de despliegue en todas las etapas e introduzca pruebas de verificación de seguridad razonables.
+   </td>
+   <td>Inyectar secretos dinámicamente durante el proceso de despliegue desde depósitos protegidos y auditar todos los accesos humanos a los mismos.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>El proceso de despliegue está totalmente automatizado e incorpora la verificación automática de todos los hitos críticos.
+   </td>
+   <td>Verifique automáticamente la integridad de todo el software desplegado, independientemente de si está desarrollado interna o externamente.
+   </td>
+   <td>Mejore el ciclo de vida de los secretos de la aplicación generandolos regularmente y garantizando su uso adecuado.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    3. Implementación
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    3.3 Gestión de los defectos
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Seguimiento de defectos
+   </td>
+   <td>Métrica y retroalimentación
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Todos los defectos se rastrean dentro de cada proyecto.
+   </td>
+   <td>Introducir un seguimiento estructurado de los defectos de seguridad y tomar decisiones informadas basadas en esta información.
+   </td>
+   <td>Repase periódicamente los defectos de seguridad registrados anteriormente y obtenga ganancias rápidas a partir de las métricas básicas.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>El seguimiento de los defectos se utiliza para influir en el proceso de implantación.
+   </td>
+   <td>Califique todos los defectos de seguridad en toda la organización de forma coherente y definir acuerdos de nivel de servicio para determinadas clases de gravedad.
+   </td>
+   <td>Recopilar métricas estandarizadas de gestión de defectos y utilizarlas también para priorizar las iniciativas impulsadas de forma centralizada.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>El seguimiento de los defectos en múltiples componentes se utiliza para ayudar a reducir el número de nuevos defectos.
+   </td>
+   <td>Haga cumplir los acuerdos de nivel de servicio predefinidos e integre su sistema de gestión de defectos con otras herramientas pertinentes.
+   </td>
+   <td>Mejore continuamente sus métricas de gestión de defectos de seguridad y correlaciónelas con otras fuentes.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+## Verificación
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+<ol>
+
+<li>Verificación
+</li>
+</ol>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    4.1 Evaluación de la arquitectura
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Validación de la arquitectura
+   </td>
+   <td>Armonización de la arquitectura
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Revisar la arquitectura para asegurarse de que existen mitigaciones de referencia para los riesgos típicos.
+   </td>
+   <td>Identificar los componentes de la arquitectura de la aplicación y de la infraestructura y revisarlos para la provisión de seguridad básica
+   </td>
+   <td>Revisión ad hoc de la arquitectura en busca de amenazas de seguridad no mitigadas.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Revisar la provisión completa de mecanismos de seguridad en la arquitectura.
+   </td>
+   <td>Validar los mecanismos de seguridad de la arquitectura
+   </td>
+   <td>Analizar la arquitectura en busca de amenazas conocidas.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Analizar la arquitectura en busca de amenazas conocidas.	Revisar la efectividad de la arquitectura y retroalimentar los resultados para mejorar la arquitectura de seguridad.
+   </td>
+   <td>Revisión de la eficacia de los componentes de la arquitectura
+   </td>
+   <td>Alimentar los resultados de la revisión de la arquitectura con la arquitectura empresarial, los principios y patrones de diseño de la organización, las soluciones de seguridad y las arquitecturas de referencia.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    4. Verificación
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    4.2 Pruebas basadas en requisitos
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Control de verificación
+   </td>
+   <td>Pruebas de uso indebido/abuso
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Encontrar oportunamente vulnerabilidades básicas y otros problemas de seguridad.
+   </td>
+   <td>Prueba de los controles de seguridad del software
+   </td>
+   <td>Realización de pruebas de seguridad difusas
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Realice una revisión de la implementación para descubrir los riesgos específicos de la aplicación frente a los requisitos de seguridad.
+   </td>
+   <td>Elaborar casos de prueba a partir de los requisitos de seguridad conocidos
+   </td>
+   <td>Crear y probar los casos de abuso y la prueba de defectos de la lógica empresarial
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Mantener el nivel de seguridad de la aplicación después de las correcciones de errores, los cambios o durante el mantenimiento.
+   </td>
+   <td>Realizar pruebas de regresión (con pruebas unitarias de seguridad)
+   </td>
+   <td>Pruebas de denegación de servicio y de estrés de seguridad
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    4. Verificación
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    4.3 Pruebas de seguridad
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Escalabilidad
+   </td>
+   <td>Entendimiento Profundo
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Realizar pruebas de seguridad (tanto manuales como basadas en herramientas) para descubrir defectos de seguridad.
+   </td>
+   <td>Utilizar herramientas de pruebas de seguridad automatizadas
+   </td>
+   <td>Realizar pruebas de seguridad manuales de los componentes de alto riesgo
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Haga que las pruebas de seguridad durante el desarrollo sean más completas y eficientes mediante la automatización complementada con pruebas de penetración de seguridad manuales regulares.
+   </td>
+   <td>Utilizar la automatización de las pruebas de seguridad específicas para la aplicación
+   </td>
+   <td>Llevar a cabo pruebas de penetración manuales
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Incorporar las pruebas de seguridad como parte de los procesos de desarrollo e implantación.
+   </td>
+   <td>Integrar las pruebas de seguridad automatizadas en el proceso de creación y despliegue
+   </td>
+   <td>Integrar las pruebas de seguridad en el proceso de desarrollo
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+## Operaciones
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+<ol>
+
+<li>Operaciones
+</li>
+</ol>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    5.1 Gestión de incidentes
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Detección de Incidentes
+   </td>
+   <td>Respuesta a incidentes
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Máximo esfuerzo en la detección y tratamiento de incidentes 
+   </td>
+   <td>Utilice y haga su mejor esfuerzo en analizar los datos de registro disponibles para realizar la detección de posibles incidentes de seguridad.
+   </td>
+   <td>Identificar las funciones y responsabilidades para la respuesta a incidentes.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Establecer un proceso formal de gestión de incidentes
+   </td>
+   <td>Seguir un proceso establecido y bien documentado para la detección de incidentes, con énfasis en la evaluación automatizada de los registros.
+   </td>
+   <td>Establezca un proceso formal de respuesta a incidentes y asegúrese de que el personal está debidamente formado para desempeñar sus funciones.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Gestión de incidencias 
+<p>
+madura
+   </td>
+   <td>Utilizar un proceso gestionado de forma proactiva para la detección de incidentes.
+   </td>
+   <td>Cuente con un equipo de respuesta a incidentes dedicado y bien formado.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    5. Operaciones
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    5.2 Gestión del entorno
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Refuerzo de la configuración
+   </td>
+   <td>Parches y actualizaciones
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Realizar el mejor esfuerzo en parcheo y robustez
+   </td>
+   <td>Realizar el mejor esfuerzo de robustecimiento de las configuraciones, basándose en la información disponible.
+   </td>
+   <td>Realice el mejor esfuerzo de parcheo de los componentes del sistema y de las aplicaciones.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Estructurar los procesos con las directrices establecidas
+   </td>
+   <td>Realice un robustecimiento coherente de las configuraciones, siguiendo las directrices y las orientaciones establecidas.
+   </td>
+   <td>Realizar parches regulares de los componentes del sistema y de las aplicaciones, en toda la pila. Garantizar la entrega puntual de los parches a los clientes.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Cumplimiento de la mejora continua del proceso
+   </td>
+   <td>Supervisar activamente las configuraciones para comprobar que se ajustan a las directrices y tratar las incidencias detectadas como defectos de seguridad.
+   </td>
+   <td>Supervisar activamente el estado de las actualizaciones y gestionar los parches que faltan como defectos de seguridad. Consultar de forma proactiva la información sobre vulnerabilidades y actualizaciones de los componentes.
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+<table>
+  <tr>
+   <td colspan="4" >
+    5. Operaciones
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" >
+    5.3 Gestión operativa
+   </td>
+  </tr>
+  <tr>
+   <td>Madurez
+   </td>
+   <td>Objetivo
+   </td>
+   <td>Protección de datos
+   </td>
+   <td>Cierre del sistema / Gestión del legado
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Prácticas Fundamentales
+   </td>
+   <td>Aplicar prácticas básicas de protección de datos
+   </td>
+   <td>Desactivar las aplicaciones y servicios no utilizados según se identifique. Gestionar individualmente las actualizaciones/migraciones de los clientes.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Procesos gestionados y con capacidad de respuesta
+   </td>
+   <td>Desarrollar un catálogo de datos y establecer una política de protección de datos.
+   </td>
+   <td>Desarrollar procesos de cierre repetibles para los sistemas/servicios no utilizados y para la migración de las dependencias heredadas. Gestionar las hojas de ruta de migración del legado para los clientes.
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Monitoreo Activo y respuesta
+   </td>
+   <td>Automatizar la detección del incumplimiento de la política y auditar periódicamente su cumplimiento. Revisar y actualizar periódicamente el catálogo de datos y la política de protección de datos.
+   </td>
+   <td>Gestionar de forma proactiva las hojas de ruta de migración, tanto para las dependencias de fin de vida útil no soportadas, como para las versiones heredadas del software entregado.
+   </td>
+  </tr>
+</table>
 
 ## 4.3 Nist 800-64.
 
 Considerar la seguridad en el ciclo de vida del desarrollo del sistema es esencial para implementar e integrar una estrategia integral para administrar el riesgo para todos los activos de tecnología de la información en una organización. La publicación especial (SP) 800-64 del Instituto Nacional de Estándares y Tecnología (NIST) tiene como objetivo ayudar a las agencias del gobierno federal a integrar actividades de seguridad esenciales en sus pautas establecidas del ciclo de vida del desarrollo del sistema.
 
 Nos ayuda a la caracterización del sistema, identificando amenazas, vulnerabilidades, control de amenazas, determinación de los riesgos, análisis de impacto, determinación de riesgo, recomendaciones de control e implementación o documentación.
+
+Según Zambrano (s.f), las 5 fases de NIST 800-64 son:
 
 Iniciación:
 
@@ -318,7 +1090,7 @@ Desarrollo/adquisición:
 Implementación/adquisición:
 
 - Creación de un plan de certificación y acreditación
-- Integrar seguridad en amientes y sistemas
+- Integrar seguridad en ambientes y sistemas
 - Sistemas de control de acceso
 - Sistema de autorización
 
@@ -340,7 +1112,7 @@ Disposición:
 
 El ciclo de vida de desarrollo de seguridad (SDL) consiste en un conjunto de prácticas que respaldan los requisitos de cumplimiento y garantía de seguridad. SDL ayuda a los desarrolladores a crear software más seguro al reducir la cantidad y la gravedad de las vulnerabilidades en el software, al mismo tiempo que reduce el costo de desarrollo.
 
-Microsoft ofrece 7 fases para que se pueda cumplir con a cabalidad las buenas prácticas a desarrollar de este modelo:
+Microsoft, 2010, como se citó en Zambrano, s.f ofrece 7 fases para que se pueda cumplir  a cabalidad las buenas prácticas a desarrollar de este modelo:
 
 Entrenamiento:
 
@@ -393,7 +1165,7 @@ Como grupo de trabajo seleccionamos este modelo de software porque ofrece un mar
 - Demostración de mejoras precisas en un programa de aseguramiento de la seguridad.
 - Definición y medida de actividades relacionadas con la seguridad dentro de una organización.
 
-Como proyecto libre, siempre permanecerá neutral a fabricante y queda disponible libremente para que todo el mundo pueda utilizarlo.
+Como proyecto libre, siempre permanecerá neutral al fabricante y queda disponible libremente para que todo el mundo pueda utilizarlo.
 
 # 7. Bibliografía.
 
@@ -406,7 +1178,4 @@ Como proyecto libre, siempre permanecerá neutral a fabricante y queda disponibl
 - Microsoft Corporation [https://learn.microsoft.com/en-us/windows/security/threat-protection/msft-security-dev-lifecycle](https://learn.microsoft.com/en-us/windows/security/threat-protection/msft-security-dev-lifecycle)
 - Open SAMM, Pavir Chandra (2009). Tomado de: [https://www.opensamm.org/author/chandra/](https://www.opensamm.org/author/chandra/)
 - SBD, MODELO DE MADUREZ DE SEGURIDAD DE SOFTWARE - OPENSAMM EN ESPAÑOL (2011). Recopilado de: [http://www.securitybydefault.com/2011/07/modelo-de-madurez-de-seguridad-de.html](http://www.securitybydefault.com/2011/07/modelo-de-madurez-de-seguridad-de.html)
-
-![Untitled](Untitled%2083e7f6ce3fe34a1bb6c526ae879ace70/Untitled.png)
-
-![Untitled](Untitled%2083e7f6ce3fe34a1bb6c526ae879ace70/Untitled%201.png)
+- Zambrano, M. (s.f). Modelos existentes. Lectura Fundamental 2 
